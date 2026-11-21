@@ -1,0 +1,33 @@
+{
+  "name": "@snow-the/dsh-sqliteq",
+  "version": "0.1.0",
+  "description": "Zero-dependency SQLite WAL job queue for Node (built-in node:sqlite, no Redis, no PostgreSQL, no better-sqlite3). SQS-style visibility timeout, at-least-once delivery, retries with backoff, dead-letter queue, and file-watch wakeups.",
+  "type": "module",
+  "main": "./lib/queue.js",
+  "exports": {
+    ".": "./lib/queue.js",
+    "./package.json": "./package.json"
+  },
+  "license": "MIT",
+  "keywords": [
+    "sqlite",
+    "wal",
+    "queue",
+    "job-queue",
+    "visibility-timeout",
+    "dead-letter",
+    "node-sqlite",
+    "zero-dependency"
+  ],
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
